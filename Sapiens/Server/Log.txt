@@ -1,0 +1,425 @@
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Connection: 127.0.0.1:59947
+Server certificates:
+Subject: /CN=ClientA/ST=Brno/C=CZ/emailAddress=436265@mail.muni.cz/O=MU/OU=M\x08FI
+Issuer: /CN=My Own Certificate Authority/ST=Brno/C=CZ/emailAddress=436273@mail.muni.cz/O=MasarykUniversity/OU=FI
+Client Register New msg: ""
+Connection: 127.0.0.1:59950
+Server certificates:
+Subject: /CN=ClientA/ST=Brno/C=CZ/emailAddress=436265@mail.muni.cz/O=MU/OU=M\x08FI
+Issuer: /CN=My Own Certificate Authority/ST=Brno/C=CZ/emailAddress=436273@mail.muni.cz/O=MasarykUniversity/OU=FI
+Client Register New msg: ""
+Server Started..
+Connection: 127.0.0.1:59989
+Server certificates:
+Subject: /CN=ClientA/ST=Brno/C=CZ/emailAddress=436265@mail.muni.cz/O=MU/OU=M\x08FI
+Issuer: /CN=My Own Certificate Authority/ST=Brno/C=CZ/emailAddress=436273@mail.muni.cz/O=MasarykUniversity/OU=FI
+Client Register New msg: ""
+Connection: 127.0.0.1:59990
+Server certificates:
+Subject: /CN=ClientA/ST=Brno/C=CZ/emailAddress=436265@mail.muni.cz/O=MU/OU=M\x08FI
+Issuer: /CN=My Own Certificate Authority/ST=Brno/C=CZ/emailAddress=436273@mail.muni.cz/O=MasarykUniversity/OU=FI
+Client Register New msg: ""
+Connection: 127.0.0.1:59995
+Server certificates:
+Subject: /CN=ClientA/ST=Brno/C=CZ/emailAddress=436265@mail.muni.cz/O=MU/OU=M\x08FI
+Issuer: /CN=My Own Certificate Authority/ST=Brno/C=CZ/emailAddress=436273@mail.muni.cz/O=MasarykUniversity/OU=FI
+Client Register New msg: ""
+139988509255304:error:1408F119:SSL routines:SSL3_GET_RECORD:decryption failed or bad record mac:s3_pkt.c:484:
+139988509255304:error:14094410:SSL routines:SSL3_READ_BYTES:sslv3 alert handshake failure:s3_pkt.c:1257:SSL alert number 40
+Server Started..
+Connection: 127.0.0.1:60306
+Server certificates:
+Subject: /CN=ClientA/ST=Brno/C=CZ/emailAddress=436265@mail.muni.cz/O=MU/OU=M\x08FI
+Issuer: /CN=My Own Certificate Authority/ST=Brno/C=CZ/emailAddress=436273@mail.muni.cz/O=MasarykUniversity/OU=FI
+Client Register New msg: ""
+Connection: 127.0.0.1:60307
+Server certificates:
+Subject: /CN=ClientA/ST=Brno/C=CZ/emailAddress=436265@mail.muni.cz/O=MU/OU=M\x08FI
+Issuer: /CN=My Own Certificate Authority/ST=Brno/C=CZ/emailAddress=436273@mail.muni.cz/O=MasarykUniversity/OU=FI
+Client Register New msg: ""
+Connection: 127.0.0.1:60310
+Server certificates:
+Subject: /CN=ClientA/ST=Brno/C=CZ/emailAddress=436265@mail.muni.cz/O=MU/OU=M\x08FI
+Issuer: /CN=My Own Certificate Authority/ST=Brno/C=CZ/emailAddress=436273@mail.muni.cz/O=MasarykUniversity/OU=FI
+Client Register New msg: ""
+Server Started..
+Connection: 127.0.0.1:60405
+Server certificates:
+Subject: /CN=ClientA/ST=Brno/C=CZ/emailAddress=436265@mail.muni.cz/O=MU/OU=M\x08FI
+Issuer: /CN=My Own Certificate Authority/ST=Brno/C=CZ/emailAddress=436273@mail.muni.cz/O=MasarykUniversity/OU=FI
+Client Register New msg: ""
+Connection: 127.0.0.1:60407
+Server certificates:
+Subject: /CN=ClientA/ST=Brno/C=CZ/emailAddress=436265@mail.muni.cz/O=MU/OU=M\x08FI
+Issuer: /CN=My Own Certificate Authority/ST=Brno/C=CZ/emailAddress=436273@mail.muni.cz/O=MasarykUniversity/OU=FI
+Client Register New msg: ""
+Connection: 127.0.0.1:60410
+Server certificates:
+Subject: /CN=ClientA/ST=Brno/C=CZ/emailAddress=436265@mail.muni.cz/O=MU/OU=M\x08FI
+Issuer: /CN=My Own Certificate Authority/ST=Brno/C=CZ/emailAddress=436273@mail.muni.cz/O=MasarykUniversity/OU=FI
+Client Register New msg: ""
+140544875423368:error:14094410:SSL routines:SSL3_READ_BYTES:sslv3 alert handshake failure:s3_pkt.c:1257:SSL alert number 40
+Server Started..
+Connection: 127.0.0.1:60559
+Server certificates:
+Subject: /CN=ClientA/ST=Brno/C=CZ/emailAddress=436265@mail.muni.cz/O=MU/OU=M\x08FI
+Issuer: /CN=My Own Certificate Authority/ST=Brno/C=CZ/emailAddress=436273@mail.muni.cz/O=MasarykUniversity/OU=FI
+Client Register New msg: ""
+Connection: 127.0.0.1:60563
+Server certificates:
+Subject: /CN=ClientA/ST=Brno/C=CZ/emailAddress=436265@mail.muni.cz/O=MU/OU=M\x08FI
+Issuer: /CN=My Own Certificate Authority/ST=Brno/C=CZ/emailAddress=436273@mail.muni.cz/O=MasarykUniversity/OU=FI
+Client Register New msg: ""
+Connection: 127.0.0.1:60564
+Server certificates:
+Subject: /CN=ClientA/ST=Brno/C=CZ/emailAddress=436265@mail.muni.cz/O=MU/OU=M\x08FI
+Issuer: /CN=My Own Certificate Authority/ST=Brno/C=CZ/emailAddress=436273@mail.muni.cz/O=MasarykUniversity/OU=FI
+Client Register New msg: ""
+Server Started..
+Connection: 127.0.0.1:60646
+Server certificates:
+Subject: /CN=ClientA/ST=Brno/C=CZ/emailAddress=436265@mail.muni.cz/O=MU/OU=M\x08FI
+Issuer: /CN=My Own Certificate Authority/ST=Brno/C=CZ/emailAddress=436273@mail.muni.cz/O=MasarykUniversity/OU=FI
+Client Register New msg: ""
+Connection: 127.0.0.1:60647
+Server certificates:
+Subject: /CN=ClientA/ST=Brno/C=CZ/emailAddress=436265@mail.muni.cz/O=MU/OU=M\x08FI
+Issuer: /CN=My Own Certificate Authority/ST=Brno/C=CZ/emailAddress=436273@mail.muni.cz/O=MasarykUniversity/OU=FI
+Client Register New msg: ""
+Connection: 127.0.0.1:60648
+Server certificates:
+Subject: /CN=ClientA/ST=Brno/C=CZ/emailAddress=436265@mail.muni.cz/O=MU/OU=M\x08FI
+Issuer: /CN=My Own Certificate Authority/ST=Brno/C=CZ/emailAddress=436273@mail.muni.cz/O=MasarykUniversity/OU=FI
+Client Register New msg: ""
+Server Started..
+Connection: 127.0.0.1:60702
+Server certificates:
+Subject: /CN=ClientA/ST=Brno/C=CZ/emailAddress=436265@mail.muni.cz/O=MU/OU=M\x08FI
+Issuer: /CN=My Own Certificate Authority/ST=Brno/C=CZ/emailAddress=436273@mail.muni.cz/O=MasarykUniversity/OU=FI
+Client Register New msg: ""
+Connection: 127.0.0.1:60708
+Server certificates:
+Subject: /CN=ClientA/ST=Brno/C=CZ/emailAddress=436265@mail.muni.cz/O=MU/OU=M\x08FI
+Issuer: /CN=My Own Certificate Authority/ST=Brno/C=CZ/emailAddress=436273@mail.muni.cz/O=MasarykUniversity/OU=FI
+Client Register New msg: ""
+Connection: 127.0.0.1:60710
+Server certificates:
+Subject: /CN=ClientA/ST=Brno/C=CZ/emailAddress=436265@mail.muni.cz/O=MU/OU=M\x08FI
+Issuer: /CN=My Own Certificate Authority/ST=Brno/C=CZ/emailAddress=436273@mail.muni.cz/O=MasarykUniversity/OU=FI
+Client Register New msg: ""
+Server Started..
+Connection: 127.0.0.1:60807
+Server certificates:
+Subject: /CN=ClientA/ST=Brno/C=CZ/emailAddress=436265@mail.muni.cz/O=MU/OU=M\x08FI
+Issuer: /CN=My Own Certificate Authority/ST=Brno/C=CZ/emailAddress=436273@mail.muni.cz/O=MasarykUniversity/OU=FI
+Client Register New msg: ""
+Connection: 127.0.0.1:60809
+Server certificates:
+Subject: /CN=ClientA/ST=Brno/C=CZ/emailAddress=436265@mail.muni.cz/O=MU/OU=M\x08FI
+Issuer: /CN=My Own Certificate Authority/ST=Brno/C=CZ/emailAddress=436273@mail.muni.cz/O=MasarykUniversity/OU=FI
+Client Register New msg: ""
+Connection: 127.0.0.1:60810
+Server certificates:
+Subject: /CN=ClientA/ST=Brno/C=CZ/emailAddress=436265@mail.muni.cz/O=MU/OU=M\x08FI
+Issuer: /CN=My Own Certificate Authority/ST=Brno/C=CZ/emailAddress=436273@mail.muni.cz/O=MasarykUniversity/OU=FI
+Client Register New msg: ""
+139851305313928:error:14094410:SSL routines:SSL3_READ_BYTES:sslv3 alert handshake failure:s3_pkt.c:1257:SSL alert number 40
+Server Started..
+Connection: 127.0.0.1:32962
+Server certificates:
+Subject: /CN=ClientA/ST=Brno/C=CZ/emailAddress=436265@mail.muni.cz/O=MU/OU=M\x08FI
+Issuer: /CN=My Own Certificate Authority/ST=Brno/C=CZ/emailAddress=436273@mail.muni.cz/O=MasarykUniversity/OU=FI
+Client Register New msg: ""
+Connection: 127.0.0.1:32964
+Server certificates:
+Subject: /CN=ClientA/ST=Brno/C=CZ/emailAddress=436265@mail.muni.cz/O=MU/OU=M\x08FI
+Issuer: /CN=My Own Certificate Authority/ST=Brno/C=CZ/emailAddress=436273@mail.muni.cz/O=MasarykUniversity/OU=FI
+Client Register New msg: ""
+Connection: 127.0.0.1:32965
+Server certificates:
+Subject: /CN=ClientA/ST=Brno/C=CZ/emailAddress=436265@mail.muni.cz/O=MU/OU=M\x08FI
+Issuer: /CN=My Own Certificate Authority/ST=Brno/C=CZ/emailAddress=436273@mail.muni.cz/O=MasarykUniversity/OU=FI
+Client Register New msg: ""
+139727928309384:error:1408F119:SSL routines:SSL3_GET_RECORD:decryption failed or bad record mac:s3_pkt.c:484:
+139727928309384:error:140940F6:SSL routines:SSL3_READ_BYTES:unknown alert type:s3_pkt.c:1267:
+Server Started..
+Connection: 127.0.0.1:33773
+Server certificates:
+Subject: /CN=ClientA/ST=Brno/C=CZ/emailAddress=436265@mail.muni.cz/O=MU/OU=M\x08FI
+Issuer: /CN=My Own Certificate Authority/ST=Brno/C=CZ/emailAddress=436273@mail.muni.cz/O=MasarykUniversity/OU=FI
+Client Register New msg: ""
+Connection: 127.0.0.1:33779
+Server certificates:
+Subject: /CN=ClientA/ST=Brno/C=CZ/emailAddress=436265@mail.muni.cz/O=MU/OU=M\x08FI
+Issuer: /CN=My Own Certificate Authority/ST=Brno/C=CZ/emailAddress=436273@mail.muni.cz/O=MasarykUniversity/OU=FI
+Client Register New msg: ""
+Connection: 127.0.0.1:33780
+Server certificates:
+Subject: /CN=ClientA/ST=Brno/C=CZ/emailAddress=436265@mail.muni.cz/O=MU/OU=M\x08FI
+Issuer: /CN=My Own Certificate Authority/ST=Brno/C=CZ/emailAddress=436273@mail.muni.cz/O=MasarykUniversity/OU=FI
+Client Register New msg: ""
+140663668602504:error:1408F119:SSL routines:SSL3_GET_RECORD:decryption failed or bad record mac:s3_pkt.c:484:
+140663668602504:error:140940F6:SSL routines:SSL3_READ_BYTES:unknown alert type:s3_pkt.c:1267:
+140663668602504:error:1408F10B:SSL routines:SSL3_GET_RECORD:wrong version number:s3_pkt.c:337:
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Connection: 127.0.0.1:33833
+Server certificates:
+Subject: /CN=ClientA/ST=Brno/C=CZ/emailAddress=436265@mail.muni.cz/O=MU/OU=M\x08FI
+Issuer: /CN=My Own Certificate Authority/ST=Brno/C=CZ/emailAddress=436273@mail.muni.cz/O=MasarykUniversity/OU=FI
+Client Register New msg: ""
+Connection: 127.0.0.1:33835
+Server certificates:
+Subject: /CN=ClientA/ST=Brno/C=CZ/emailAddress=436265@mail.muni.cz/O=MU/OU=M\x08FI
+Issuer: /CN=My Own Certificate Authority/ST=Brno/C=CZ/emailAddress=436273@mail.muni.cz/O=MasarykUniversity/OU=FI
+Client Register New msg: ""
+Connection: 127.0.0.1:33836
+Server certificates:
+Subject: /CN=ClientA/ST=Brno/C=CZ/emailAddress=436265@mail.muni.cz/O=MU/OU=M\x08FI
+Issuer: /CN=My Own Certificate Authority/ST=Brno/C=CZ/emailAddress=436273@mail.muni.cz/O=MasarykUniversity/OU=FI
+Client Register New msg: ""
+140407839123080:error:1408F081:SSL routines:SSL3_GET_RECORD:block cipher pad is wrong:s3_pkt.c:410:
+140407839123080:error:140940F6:SSL routines:SSL3_READ_BYTES:unknown alert type:s3_pkt.c:1267:
+140407839123080:error:140940F6:SSL routines:SSL3_READ_BYTES:unknown alert type:s3_pkt.c:1267:
+140407839123080:error:140940F6:SSL routines:SSL3_READ_BYTES:unknown alert type:s3_pkt.c:1267:
+140407839123080:error:140940F6:SSL routines:SSL3_READ_BYTES:unknown alert type:s3_pkt.c:1267:
+Server Started..
+Connection: 127.0.0.1:33869
+Server certificates:
+Subject: /CN=ClientA/ST=Brno/C=CZ/emailAddress=436265@mail.muni.cz/O=MU/OU=M\x08FI
+Issuer: /CN=My Own Certificate Authority/ST=Brno/C=CZ/emailAddress=436273@mail.muni.cz/O=MasarykUniversity/OU=FI
+Client Register New msg: ""
+Connection: 127.0.0.1:33872
+Server certificates:
+Subject: /CN=ClientA/ST=Brno/C=CZ/emailAddress=436265@mail.muni.cz/O=MU/OU=M\x08FI
+Issuer: /CN=My Own Certificate Authority/ST=Brno/C=CZ/emailAddress=436273@mail.muni.cz/O=MasarykUniversity/OU=FI
+Client Register New msg: ""
+Connection: 127.0.0.1:33877
+Server certificates:
+Subject: /CN=ClientA/ST=Brno/C=CZ/emailAddress=436265@mail.muni.cz/O=MU/OU=M\x08FI
+Issuer: /CN=My Own Certificate Authority/ST=Brno/C=CZ/emailAddress=436273@mail.muni.cz/O=MasarykUniversity/OU=FI
+Client Register New msg: ""
+Server Started..
+Connection: 127.0.0.1:34519
+Server certificates:
+Subject: /CN=ClientA/ST=Brno/C=CZ/emailAddress=436265@mail.muni.cz/O=MU/OU=M\x08FI
+Issuer: /CN=My Own Certificate Authority/ST=Brno/C=CZ/emailAddress=436273@mail.muni.cz/O=MasarykUniversity/OU=FI
+Client Register New msg: ""
+Connection: 127.0.0.1:34521
+Server certificates:
+Subject: /CN=ClientA/ST=Brno/C=CZ/emailAddress=436265@mail.muni.cz/O=MU/OU=M\x08FI
+Issuer: /CN=My Own Certificate Authority/ST=Brno/C=CZ/emailAddress=436273@mail.muni.cz/O=MasarykUniversity/OU=FI
+Client Register New msg: ""
+Connection: 127.0.0.1:34525
+Server certificates:
+Subject: /CN=ClientA/ST=Brno/C=CZ/emailAddress=436265@mail.muni.cz/O=MU/OU=M\x08FI
+Issuer: /CN=My Own Certificate Authority/ST=Brno/C=CZ/emailAddress=436273@mail.muni.cz/O=MasarykUniversity/OU=FI
+Client Register New msg: ""
+165213832:error:1408F081:SSL routines:SSL3_GET_RECORD:block cipher pad is wrong:s3_pkt.c:410:
+165213832:error:140940F6:SSL routines:SSL3_READ_BYTES:unknown alert type:s3_pkt.c:1267:
+Server Started..
+Connection: 127.0.0.1:46226
+Server certificates:
+Subject: /CN=ClientA/ST=Brno/C=CZ/emailAddress=436265@mail.muni.cz/O=MU/OU=M\x08FI
+Issuer: /CN=My Own Certificate Authority/ST=Brno/C=CZ/emailAddress=436273@mail.muni.cz/O=MasarykUniversity/OU=FI
+Client Register New msg: ""
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Connection: 127.0.0.1:45520
+Server certificates:
+Subject: /CN=ClientA/ST=Brno/C=CZ/emailAddress=436265@mail.muni.cz/O=MU/OU=M\x08FI
+Issuer: /CN=My Own Certificate Authority/ST=Brno/C=CZ/emailAddress=436273@mail.muni.cz/O=MasarykUniversity/OU=FI
+Client Register New msg: ""
+Connection: 127.0.0.1:45521
+Server certificates:
+Subject: /CN=ClientA/ST=Brno/C=CZ/emailAddress=436265@mail.muni.cz/O=MU/OU=M\x08FI
+Issuer: /CN=My Own Certificate Authority/ST=Brno/C=CZ/emailAddress=436273@mail.muni.cz/O=MasarykUniversity/OU=FI
+Client Register New msg: ""
+Server Shutdown..
+Server Started..
+Connection: 127.0.0.1:45578
+Server certificates:
+Subject: /CN=ClientA/ST=Brno/C=CZ/emailAddress=436265@mail.muni.cz/O=MU/OU=M\x08FI
+Issuer: /CN=My Own Certificate Authority/ST=Brno/C=CZ/emailAddress=436273@mail.muni.cz/O=MasarykUniversity/OU=FI
+Client Register New msg: ""
+Connection: 127.0.0.1:45579
+Server certificates:
+Subject: /CN=ClientA/ST=Brno/C=CZ/emailAddress=436265@mail.muni.cz/O=MU/OU=M\x08FI
+Issuer: /CN=My Own Certificate Authority/ST=Brno/C=CZ/emailAddress=436273@mail.muni.cz/O=MasarykUniversity/OU=FI
+Client Register New msg: ""
+Server Shutdown..
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98
+Server Started..
+Can't bind port 98

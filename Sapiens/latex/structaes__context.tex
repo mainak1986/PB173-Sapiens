@@ -1,0 +1,51 @@
+\hypertarget{structaes__context}{
+\section{aes\_\-context Struct Reference}
+\label{structaes__context}\index{aes\_\-context@{aes\_\-context}}
+}
+
+
+AES context structure.  
+
+
+{\ttfamily \#include $<$aes.h$>$}\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{structaes__context_af05054b9a37a06446ef0abf43cd97520}{nr}
+\item 
+uint32\_\-t $\ast$ \hyperlink{structaes__context_a93db0195022595f748c001221cc31abe}{rk}
+\item 
+uint32\_\-t \hyperlink{structaes__context_a5b40a8d4bfd83ebbfff914cd8f561afa}{buf} \mbox{[}68\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+AES context structure. \begin{DoxyNote}{Note}
+buf is able to hold 32 extra bytes, which can be used:
+\begin{DoxyItemize}
+\item for alignment purposes if VIA padlock is used, and/or
+\item to simplify key expansion in the 256-\/bit case by generating an extra round key 
+\end{DoxyItemize}
+\end{DoxyNote}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structaes__context_a5b40a8d4bfd83ebbfff914cd8f561afa}{
+\index{aes\_\-context@{aes\_\-context}!buf@{buf}}
+\index{buf@{buf}!aes_context@{aes\_\-context}}
+\subsubsection[{buf}]{\setlength{\rightskip}{0pt plus 5cm}uint32\_\-t {\bf aes\_\-context::buf}\mbox{[}68\mbox{]}}}
+\label{structaes__context_a5b40a8d4bfd83ebbfff914cd8f561afa}
+unaligned data \hypertarget{structaes__context_af05054b9a37a06446ef0abf43cd97520}{
+\index{aes\_\-context@{aes\_\-context}!nr@{nr}}
+\index{nr@{nr}!aes_context@{aes\_\-context}}
+\subsubsection[{nr}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf aes\_\-context::nr}}}
+\label{structaes__context_af05054b9a37a06446ef0abf43cd97520}
+number of rounds \hypertarget{structaes__context_a93db0195022595f748c001221cc31abe}{
+\index{aes\_\-context@{aes\_\-context}!rk@{rk}}
+\index{rk@{rk}!aes_context@{aes\_\-context}}
+\subsubsection[{rk}]{\setlength{\rightskip}{0pt plus 5cm}uint32\_\-t$\ast$ {\bf aes\_\-context::rk}}}
+\label{structaes__context_a93db0195022595f748c001221cc31abe}
+AES round keys 
+
+The documentation for this struct was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{aes_8h}{aes.h}\end{DoxyCompactItemize}

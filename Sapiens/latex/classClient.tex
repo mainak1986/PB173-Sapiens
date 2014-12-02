@@ -1,0 +1,209 @@
+\hypertarget{classClient}{
+\section{Client Class Reference}
+\label{classClient}\index{Client@{Client}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classClient_ad636af208cd43a44c112d61c88c7804b}{Client} (\hyperlink{classUserIf}{UserIf} $\ast$)
+\item 
+\hyperlink{classClient_a840e519ca781888cbd54181572ebe3a7}{$\sim$Client} ()
+\item 
+int \hyperlink{classClient_a0b3c7c10e9d82c0f5f41ee8f0d68f1b4}{initSSL} ()
+\item 
+int \hyperlink{classClient_aa59c27ce2d1cae55bf03d5ea64c59eef}{setpassword} (const char $\ast$p)
+\item 
+int \hyperlink{classClient_abcdf713583d46487081578612b5f2ae3}{loadCertificates} ()
+\item 
+int \hyperlink{classClient_a5bf20fbae99e62931592728e0763c9d3}{openConnection} ()
+\item 
+int \hyperlink{classClient_aca61b39a53eadc28d116dcae94b03e15}{startSSL} (unsigned char $\ast$, int $\ast$len)
+\item 
+int \hyperlink{classClient_afcd814d5ed81c40cba7e8098b887ef29}{stopSSL} (unsigned char $\ast$, int $\ast$len)
+\item 
+int \hyperlink{classClient_af47e3d9fab8c28ceeb709287a726660b}{registerToServer} (unsigned char $\ast$, int $\ast$len)
+\item 
+\hypertarget{classClient_a2a798b56462e5d51544b3e925b1aaf52}{
+int {\bfseries unregisterOnServer} (unsigned char $\ast$, int len)}
+\label{classClient_a2a798b56462e5d51544b3e925b1aaf52}
+
+\item 
+int \hyperlink{classClient_aca02d554e100a27ca0c2ae3b22d74f8b}{initiateChatSession} (int destClient)
+\item 
+\hypertarget{classClient_a98f7e1439a0c01db787d35d847b4d985}{
+int {\bfseries terminateChatSession} ()}
+\label{classClient_a98f7e1439a0c01db787d35d847b4d985}
+
+\item 
+int \hyperlink{classClient_a63b70c823acca41db31b07630814b8b6}{getActiveUserList} (\hyperlink{structClientInfo}{ClientInfo} $\ast$\&clientList, int $\ast$len)
+\item 
+int \hyperlink{classClient_a4a755fe461f77825b30a7a00c1cd9b5c}{receiveData} (unsigned char $\ast$data, int len)
+\item 
+int \hyperlink{classClient_a851cbb91211093de7983127c68eab263}{sendData} (unsigned char $\ast$data, int len)
+\item 
+\hypertarget{classClient_a61aa57e85f362501329e9164ddf4bdc9}{
+int {\bfseries getAccountStatus} (\hyperlink{structClientInfo}{ClientInfo} $\ast$client)}
+\label{classClient_a61aa57e85f362501329e9164ddf4bdc9}
+
+\item 
+void $\ast$ \hyperlink{classClient_a7b83f2c7c0dfdd9022caab642c5f2d7f}{listener} (void $\ast$)
+\item 
+void $\ast$ \hyperlink{classClient_a77b4af68238cc619103711603de95cdf}{worker} (void $\ast$)
+\item 
+int \hyperlink{classClient_ac73e9b5525ca9927ed90e83e9ebe4c15}{isconnected} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classClient_ad636af208cd43a44c112d61c88c7804b}{
+\index{Client@{Client}!Client@{Client}}
+\index{Client@{Client}!Client@{Client}}
+\subsubsection[{Client}]{\setlength{\rightskip}{0pt plus 5cm}Client::Client ({\bf UserIf} $\ast$ {\em myUi})}}
+\label{classClient_ad636af208cd43a44c112d61c88c7804b}
+\hyperlink{classClient}{Client} constructor: Takes the User interface object and uses it to initialize class attribute of same type.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \hyperlink{classUserIf}{UserIf}}]object of user interface class \end{DoxyParams}
+\hypertarget{classClient_a840e519ca781888cbd54181572ebe3a7}{
+\index{Client@{Client}!$\sim$Client@{$\sim$Client}}
+\index{$\sim$Client@{$\sim$Client}!Client@{Client}}
+\subsubsection[{$\sim$Client}]{\setlength{\rightskip}{0pt plus 5cm}Client::$\sim$Client ()}}
+\label{classClient_a840e519ca781888cbd54181572ebe3a7}
+\hyperlink{classClient}{Client} desctructor: Kill session and listener thread. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classClient_a63b70c823acca41db31b07630814b8b6}{
+\index{Client@{Client}!getActiveUserList@{getActiveUserList}}
+\index{getActiveUserList@{getActiveUserList}!Client@{Client}}
+\subsubsection[{getActiveUserList}]{\setlength{\rightskip}{0pt plus 5cm}int Client::getActiveUserList ({\bf ClientInfo} $\ast$\& {\em cList}, \/  int $\ast$ {\em len})}}
+\label{classClient_a63b70c823acca41db31b07630814b8b6}
+getActiveUserList: creates a request to get active user list from server and waits for its reply. Recieved information is used to populate the client list, which is then returned back to the calling function. 
+
+If not present, creates the listener thread. From now on , all SSL read operations are handled by the listener thread. 
+
+Currently, behaviour is unknown if the clients closes a chat session and tries to restart it. And out parameters are not being used now as well.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em cList}]\mbox{[}out\mbox{]} \item[{\em len}]\mbox{[}out\mbox{]} \end{DoxyParams}
+\hypertarget{classClient_aca02d554e100a27ca0c2ae3b22d74f8b}{
+\index{Client@{Client}!initiateChatSession@{initiateChatSession}}
+\index{initiateChatSession@{initiateChatSession}!Client@{Client}}
+\subsubsection[{initiateChatSession}]{\setlength{\rightskip}{0pt plus 5cm}int Client::initiateChatSession (int {\em destClient})}}
+\label{classClient_aca02d554e100a27ca0c2ae3b22d74f8b}
+initiateChatSession: Creates a call begin packet for destination client and writes it on ssl channel. destClient value should be valid. For all invalid values, connection attempt will fail. 
+\begin{DoxyParams}{Parameters}
+\item[{\em destClient}]\end{DoxyParams}
+\hypertarget{classClient_a0b3c7c10e9d82c0f5f41ee8f0d68f1b4}{
+\index{Client@{Client}!initSSL@{initSSL}}
+\index{initSSL@{initSSL}!Client@{Client}}
+\subsubsection[{initSSL}]{\setlength{\rightskip}{0pt plus 5cm}int Client::initSSL ()}}
+\label{classClient_a0b3c7c10e9d82c0f5f41ee8f0d68f1b4}
+initSSL : initializes the SSL library and context. \hypertarget{classClient_ac73e9b5525ca9927ed90e83e9ebe4c15}{
+\index{Client@{Client}!isconnected@{isconnected}}
+\index{isconnected@{isconnected}!Client@{Client}}
+\subsubsection[{isconnected}]{\setlength{\rightskip}{0pt plus 5cm}int Client::isconnected ()}}
+\label{classClient_ac73e9b5525ca9927ed90e83e9ebe4c15}
+isconnected: checks if a chat session with other client is active. \hypertarget{classClient_a7b83f2c7c0dfdd9022caab642c5f2d7f}{
+\index{Client@{Client}!listener@{listener}}
+\index{listener@{listener}!Client@{Client}}
+\subsubsection[{listener}]{\setlength{\rightskip}{0pt plus 5cm}void $\ast$ Client::listener (void $\ast$)}}
+\label{classClient_a7b83f2c7c0dfdd9022caab642c5f2d7f}
+listener: waits on a blocking read call and handles all the packets coming from server. It can handle call request packets on both sides ie call initiator and call receiver, data packets and termination packets. Different packets are processed differently here. As a result of processing, ssl write and/or ui write or any other processing function may be called. 
+
+FUTURE: Extend it to handle all possible packets for example: register request replies, user list replies, etc. And handle all ssl read operations in this function. \hypertarget{classClient_abcdf713583d46487081578612b5f2ae3}{
+\index{Client@{Client}!loadCertificates@{loadCertificates}}
+\index{loadCertificates@{loadCertificates}!Client@{Client}}
+\subsubsection[{loadCertificates}]{\setlength{\rightskip}{0pt plus 5cm}int Client::loadCertificates ()}}
+\label{classClient_abcdf713583d46487081578612b5f2ae3}
+loadCertificates: Loads the certificate from certificate file and extract information from it. Can be expanded to get public and private keys and store them for assymetric encryption. \hypertarget{classClient_a5bf20fbae99e62931592728e0763c9d3}{
+\index{Client@{Client}!openConnection@{openConnection}}
+\index{openConnection@{openConnection}!Client@{Client}}
+\subsubsection[{openConnection}]{\setlength{\rightskip}{0pt plus 5cm}int Client::openConnection ()}}
+\label{classClient_a5bf20fbae99e62931592728e0763c9d3}
+openConnection: Opens a raw socket connection to server
+
+\begin{DoxyReturn}{Returns}
+0 on success and 1 on failure 
+\end{DoxyReturn}
+\hypertarget{classClient_a4a755fe461f77825b30a7a00c1cd9b5c}{
+\index{Client@{Client}!receiveData@{receiveData}}
+\index{receiveData@{receiveData}!Client@{Client}}
+\subsubsection[{receiveData}]{\setlength{\rightskip}{0pt plus 5cm}int Client::receiveData (unsigned char $\ast$ {\em data}, \/  int {\em len})}}
+\label{classClient_a4a755fe461f77825b30a7a00c1cd9b5c}
+receiveData: It handles the data coming form the server side. This checks if the packets received are for key establishment for data exchange. 
+
+All normal data packets are encrypted when received therefore, they are decrypted here and then forwarded to the UI for display.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em data}]buffer of either plain text or encrypted data . \item[{\em len}]length of buffer in bytes \end{DoxyParams}
+\hypertarget{classClient_af47e3d9fab8c28ceeb709287a726660b}{
+\index{Client@{Client}!registerToServer@{registerToServer}}
+\index{registerToServer@{registerToServer}!Client@{Client}}
+\subsubsection[{registerToServer}]{\setlength{\rightskip}{0pt plus 5cm}int Client::registerToServer (unsigned char $\ast$ {\em response}, \/  int $\ast$ {\em len})}}
+\label{classClient_af47e3d9fab8c28ceeb709287a726660b}
+registerToServer: sends the registration request to server and waits for its response. A successful response from server, contains the unique client Id assigned by the server. This clientID is saved in client attributes. And used for all further communications, during this client$<$-\/-\/$>$server session. out parameters are not being used at the moment. :( 
+\begin{DoxyParams}{Parameters}
+\item[{\em response}]\mbox{[}out\mbox{]}stores the reponse of server for the register request. \item[{\em len}]\mbox{[}out\mbox{]}this function sets length of the response buffer.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success and 1 on failure 
+\end{DoxyReturn}
+\hypertarget{classClient_a851cbb91211093de7983127c68eab263}{
+\index{Client@{Client}!sendData@{sendData}}
+\index{sendData@{sendData}!Client@{Client}}
+\subsubsection[{sendData}]{\setlength{\rightskip}{0pt plus 5cm}int Client::sendData (unsigned char $\ast$ {\em data}, \/  int {\em len})}}
+\label{classClient_a851cbb91211093de7983127c68eab263}
+sendData: This function is used by UI during chat session to send data to the other end. It creates the packet for data and sends it. 
+
+Every data packet is encrypted before it is written into the packet.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em data}]buffer of plain text data as given from UI \item[{\em len}]length of buffer in bytes \end{DoxyParams}
+\hypertarget{classClient_aa59c27ce2d1cae55bf03d5ea64c59eef}{
+\index{Client@{Client}!setpassword@{setpassword}}
+\index{setpassword@{setpassword}!Client@{Client}}
+\subsubsection[{setpassword}]{\setlength{\rightskip}{0pt plus 5cm}int Client::setpassword (const char $\ast$ {\em passwd})}}
+\label{classClient_aa59c27ce2d1cae55bf03d5ea64c59eef}
+setpassword: To set the password for accessing certificate. In debug version $\ast$this is used primariry for automating extraction of private key from $\ast$certificate using a passphrase. Not to be used like this in the release version.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em password}]is the passphrase for getting private key from certificate \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+length of password in case of success or in failure. 
+\end{DoxyReturn}
+\hypertarget{classClient_aca61b39a53eadc28d116dcae94b03e15}{
+\index{Client@{Client}!startSSL@{startSSL}}
+\index{startSSL@{startSSL}!Client@{Client}}
+\subsubsection[{startSSL}]{\setlength{\rightskip}{0pt plus 5cm}int Client::startSSL (unsigned char $\ast$ {\em response}, \/  int $\ast$ {\em len})}}
+\label{classClient_aca61b39a53eadc28d116dcae94b03e15}
+startSSL: creates SSL connection on the opened socket connection. In this debug version, this function sends a test \char`\"{}Ahoj\char`\"{} message to server and receives it reply back. This function increases the testability to observe the data from server, thus verifying the connection establishment.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em response}]\mbox{[}out\mbox{]} stores the reponse of server for the Ahoj message. \item[{\em len}]\mbox{[}out\mbox{]} this function sets length of the response buffer.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success and 1 on failure 
+\end{DoxyReturn}
+\hypertarget{classClient_afcd814d5ed81c40cba7e8098b887ef29}{
+\index{Client@{Client}!stopSSL@{stopSSL}}
+\index{stopSSL@{stopSSL}!Client@{Client}}
+\subsubsection[{stopSSL}]{\setlength{\rightskip}{0pt plus 5cm}int Client::stopSSL (unsigned char $\ast$ {\em response}, \/  int $\ast$ {\em len})}}
+\label{classClient_afcd814d5ed81c40cba7e8098b887ef29}
+stopSSL: Will send a Termination request to server and wait for its response. This response is observable. 
+\begin{DoxyParams}{Parameters}
+\item[{\em response}]\mbox{[}out\mbox{]} \item[{\em len}]\mbox{[}out\mbox{]} \end{DoxyParams}
+\hypertarget{classClient_a77b4af68238cc619103711603de95cdf}{
+\index{Client@{Client}!worker@{worker}}
+\index{worker@{worker}!Client@{Client}}
+\subsubsection[{worker}]{\setlength{\rightskip}{0pt plus 5cm}void $\ast$ Client::worker (void $\ast$)}}
+\label{classClient_a77b4af68238cc619103711603de95cdf}
+For further extension and organised code. Sorry no time to reorgnise! 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+client.h\item 
+client.cpp\end{DoxyCompactItemize}

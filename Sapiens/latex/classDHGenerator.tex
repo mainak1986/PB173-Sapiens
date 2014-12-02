@@ -1,0 +1,117 @@
+\hypertarget{classDHGenerator}{
+\section{DHGenerator Class Reference}
+\label{classDHGenerator}\index{DHGenerator@{DHGenerator}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classDHGenerator_a325ce323e49cd4ad4c457c5fbeac98d2}{
+\hyperlink{classDHGenerator_a325ce323e49cd4ad4c457c5fbeac98d2}{DHGenerator} ()}
+\label{classDHGenerator_a325ce323e49cd4ad4c457c5fbeac98d2}
+
+\begin{DoxyCompactList}\small\item\em Default Constructor for the class \hyperlink{classDHGenerator}{DHGenerator}. \item\end{DoxyCompactList}\item 
+\hyperlink{classDHGenerator_aec089023908d2653236591a24a232551}{DHGenerator} (unsigned char $\ast$keyPart, int length)
+\begin{DoxyCompactList}\small\item\em Constructor for the class \hyperlink{classDHGenerator}{DHGenerator}. Need to call this contructor when the other party has initiated the DH Generation. \item\end{DoxyCompactList}\item 
+\hypertarget{classDHGenerator_a6db2eb57efea55c28cad7a5c9b993660}{
+\hyperlink{classDHGenerator_a6db2eb57efea55c28cad7a5c9b993660}{$\sim$DHGenerator} ()}
+\label{classDHGenerator_a6db2eb57efea55c28cad7a5c9b993660}
+
+\begin{DoxyCompactList}\small\item\em The default destructor of the class \hyperlink{classDHGenerator}{DHGenerator}. \item\end{DoxyCompactList}\item 
+\hypertarget{classDHGenerator_a56e0ebd5198a03930e0300dc0c77cfd6}{
+void \hyperlink{classDHGenerator_a56e0ebd5198a03930e0300dc0c77cfd6}{generateRandomNumber} ()}
+\label{classDHGenerator_a56e0ebd5198a03930e0300dc0c77cfd6}
+
+\begin{DoxyCompactList}\small\item\em Generates random number of 64 bits. \item\end{DoxyCompactList}\item 
+\hypertarget{classDHGenerator_a9159dd7f184511f387a97005ee5ffdf7}{
+void \hyperlink{classDHGenerator_a9159dd7f184511f387a97005ee5ffdf7}{generatePartialKey} ()}
+\label{classDHGenerator_a9159dd7f184511f387a97005ee5ffdf7}
+
+\begin{DoxyCompactList}\small\item\em Generates Partial \hyperlink{structKey}{Key} which is required by the other user. \item\end{DoxyCompactList}\item 
+void \hyperlink{classDHGenerator_a77e90d6b4e09770058ca1a6ad114b154}{getPartialKey} (unsigned char $\ast$, size\_\-t)
+\begin{DoxyCompactList}\small\item\em Returns the partial key generated. \item\end{DoxyCompactList}\item 
+void \hyperlink{classDHGenerator_a9e52156b2bfe8a0aa95f111c07e50017}{generateSessionKey} (unsigned char $\ast$, unsigned int)
+\begin{DoxyCompactList}\small\item\em Generates \hyperlink{classSession}{Session} \hyperlink{structKey}{Key} based on partial key received from other client. \item\end{DoxyCompactList}\item 
+void \hyperlink{classDHGenerator_a40adea2f4c5922bfe209f80b332740a9}{setPartialKey} (unsigned char $\ast$, int)
+\begin{DoxyCompactList}\small\item\em Sets the Partial \hyperlink{structKey}{Key} as recieved from the other client. \item\end{DoxyCompactList}\item 
+void \hyperlink{classDHGenerator_a371955b43769de8f1b5b8f61031b659e}{generateSessionKey} ()
+\begin{DoxyCompactList}\small\item\em Generates the \hyperlink{classSession}{Session} \hyperlink{structKey}{Key}. \item\end{DoxyCompactList}\item 
+void \hyperlink{classDHGenerator_af3d29e0133f4edb47de9350dd99d0c25}{getSessionKey} (unsigned char $\ast$sessionKey, size\_\-t length)
+\begin{DoxyCompactList}\small\item\em Returns the generated session key. \item\end{DoxyCompactList}\item 
+unsigned long int \hyperlink{classDHGenerator_a0251a2c6e322e718c133732c8cd01821}{randomSeed} ()
+\begin{DoxyCompactList}\small\item\em Returns 4 bytes of randomSeed. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classDHGenerator_aec089023908d2653236591a24a232551}{
+\index{DHGenerator@{DHGenerator}!DHGenerator@{DHGenerator}}
+\index{DHGenerator@{DHGenerator}!DHGenerator@{DHGenerator}}
+\subsubsection[{DHGenerator}]{\setlength{\rightskip}{0pt plus 5cm}DHGenerator::DHGenerator (unsigned char $\ast$ {\em keyPart}, \/  int {\em length})}}
+\label{classDHGenerator_aec089023908d2653236591a24a232551}
+
+
+Constructor for the class \hyperlink{classDHGenerator}{DHGenerator}. Need to call this contructor when the other party has initiated the DH Generation. 
+\begin{DoxyParams}{Parameters}
+\item[{\em keyPart}]The partial key required to generate DH \hyperlink{classSession}{Session} \hyperlink{structKey}{Key} \item[{\em length}]The length of the partial key \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classDHGenerator_a371955b43769de8f1b5b8f61031b659e}{
+\index{DHGenerator@{DHGenerator}!generateSessionKey@{generateSessionKey}}
+\index{generateSessionKey@{generateSessionKey}!DHGenerator@{DHGenerator}}
+\subsubsection[{generateSessionKey}]{\setlength{\rightskip}{0pt plus 5cm}void DHGenerator::generateSessionKey ()}}
+\label{classDHGenerator_a371955b43769de8f1b5b8f61031b659e}
+
+
+Generates the \hyperlink{classSession}{Session} \hyperlink{structKey}{Key}. void \hyperlink{classDHGenerator_a371955b43769de8f1b5b8f61031b659e}{generateSessionKey()} \hypertarget{classDHGenerator_a9e52156b2bfe8a0aa95f111c07e50017}{
+\index{DHGenerator@{DHGenerator}!generateSessionKey@{generateSessionKey}}
+\index{generateSessionKey@{generateSessionKey}!DHGenerator@{DHGenerator}}
+\subsubsection[{generateSessionKey}]{\setlength{\rightskip}{0pt plus 5cm}void DHGenerator::generateSessionKey (unsigned char $\ast$ {\em y}, \/  unsigned int {\em length})}}
+\label{classDHGenerator_a9e52156b2bfe8a0aa95f111c07e50017}
+
+
+Generates \hyperlink{classSession}{Session} \hyperlink{structKey}{Key} based on partial key received from other client. void \hyperlink{classDHGenerator_a9e52156b2bfe8a0aa95f111c07e50017}{generateSessionKey(unsigned char $\ast$partKey,unsigned int length)} 
+\begin{DoxyParams}{Parameters}
+\item[{\em partKey}]The partial key from the other client \item[{\em length}]The length of the partial key \end{DoxyParams}
+\hypertarget{classDHGenerator_a77e90d6b4e09770058ca1a6ad114b154}{
+\index{DHGenerator@{DHGenerator}!getPartialKey@{getPartialKey}}
+\index{getPartialKey@{getPartialKey}!DHGenerator@{DHGenerator}}
+\subsubsection[{getPartialKey}]{\setlength{\rightskip}{0pt plus 5cm}void DHGenerator::getPartialKey (unsigned char $\ast$ {\em key}, \/  size\_\-t {\em length})}}
+\label{classDHGenerator_a77e90d6b4e09770058ca1a6ad114b154}
+
+
+Returns the partial key generated. void \hyperlink{classDHGenerator_a77e90d6b4e09770058ca1a6ad114b154}{getPartialKey(unsigned char $\ast$partKey,size\_\-t length)} 
+\begin{DoxyParams}{Parameters}
+\item[{\em partKey}]The partial key required send to the other client \item[{\em length}]The length of the partial key \end{DoxyParams}
+\hypertarget{classDHGenerator_af3d29e0133f4edb47de9350dd99d0c25}{
+\index{DHGenerator@{DHGenerator}!getSessionKey@{getSessionKey}}
+\index{getSessionKey@{getSessionKey}!DHGenerator@{DHGenerator}}
+\subsubsection[{getSessionKey}]{\setlength{\rightskip}{0pt plus 5cm}void DHGenerator::getSessionKey (unsigned char $\ast$ {\em sessionKey}, \/  size\_\-t {\em length})}}
+\label{classDHGenerator_af3d29e0133f4edb47de9350dd99d0c25}
+
+
+Returns the generated session key. void \hyperlink{classDHGenerator_af3d29e0133f4edb47de9350dd99d0c25}{getSessionKey(unsigned char $\ast$sessionKey,size\_\-t length)} 
+\begin{DoxyParams}{Parameters}
+\item[{\em sessionKey}]\hyperlink{classSession}{Session} \hyperlink{structKey}{Key} generated \item[{\em Length}]of the session key \end{DoxyParams}
+\hypertarget{classDHGenerator_a0251a2c6e322e718c133732c8cd01821}{
+\index{DHGenerator@{DHGenerator}!randomSeed@{randomSeed}}
+\index{randomSeed@{randomSeed}!DHGenerator@{DHGenerator}}
+\subsubsection[{randomSeed}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long int DHGenerator::randomSeed ()}}
+\label{classDHGenerator_a0251a2c6e322e718c133732c8cd01821}
+
+
+Returns 4 bytes of randomSeed. unsigned long int \hyperlink{classDHGenerator_a0251a2c6e322e718c133732c8cd01821}{randomSeed()} \hypertarget{classDHGenerator_a40adea2f4c5922bfe209f80b332740a9}{
+\index{DHGenerator@{DHGenerator}!setPartialKey@{setPartialKey}}
+\index{setPartialKey@{setPartialKey}!DHGenerator@{DHGenerator}}
+\subsubsection[{setPartialKey}]{\setlength{\rightskip}{0pt plus 5cm}void DHGenerator::setPartialKey (unsigned char $\ast$ {\em y}, \/  int {\em length})}}
+\label{classDHGenerator_a40adea2f4c5922bfe209f80b332740a9}
+
+
+Sets the Partial \hyperlink{structKey}{Key} as recieved from the other client. void \hyperlink{classDHGenerator_a40adea2f4c5922bfe209f80b332740a9}{setPartialKey(unsigned char $\ast$partKey,int length)} 
+\begin{DoxyParams}{Parameters}
+\item[{\em partKey}]The partial key from the other client \item[{\em length}]The length of the partial key \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{DHGenerator_8h}{DHGenerator.h}\item 
+DHGenerator.cpp\end{DoxyCompactItemize}

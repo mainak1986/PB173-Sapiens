@@ -1,0 +1,58 @@
+\hypertarget{classUserIf}{
+\section{UserIf Class Reference}
+\label{classUserIf}\index{UserIf@{UserIf}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classUserIf_a2e8d3d8d85a683762f1caa0cac4f9f0c}{mainMenu} ()
+\item 
+int \hyperlink{classUserIf_a9949473878f6f561d33d068ac5325ad2}{showUser} (\hyperlink{structClientInfo}{ClientInfo} $\ast$clientInfo, int len)
+\item 
+int \hyperlink{classUserIf_aeb58e62941535f9dc0b0ee80145160e1}{chat} (\hyperlink{structClientInfo}{ClientInfo} clientInfo, unsigned char $\ast$msg, int len)
+\item 
+int \hyperlink{classUserIf_a7792572195cdb2ced9d74177e45bdc6e}{message} (char $\ast$msg, int len)
+\item 
+int \hyperlink{classUserIf_a59cf40b6f9ee11f0773ec1939ea42d53}{display} (char $\ast$msg)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classUserIf_aeb58e62941535f9dc0b0ee80145160e1}{
+\index{UserIf@{UserIf}!chat@{chat}}
+\index{chat@{chat}!UserIf@{UserIf}}
+\subsubsection[{chat}]{\setlength{\rightskip}{0pt plus 5cm}int UserIf::chat ({\bf ClientInfo} {\em clientInfo}, \/  unsigned char $\ast$ {\em msg}, \/  int {\em len})}}
+\label{classUserIf_aeb58e62941535f9dc0b0ee80145160e1}
+chat : displays the cliendID and message 
+
+Not being used in current version \hypertarget{classUserIf_a59cf40b6f9ee11f0773ec1939ea42d53}{
+\index{UserIf@{UserIf}!display@{display}}
+\index{display@{display}!UserIf@{UserIf}}
+\subsubsection[{display}]{\setlength{\rightskip}{0pt plus 5cm}int UserIf::display (char $\ast$ {\em msg})}}
+\label{classUserIf_a59cf40b6f9ee11f0773ec1939ea42d53}
+display: to display null terminated string on display screen. \hypertarget{classUserIf_a2e8d3d8d85a683762f1caa0cac4f9f0c}{
+\index{UserIf@{UserIf}!mainMenu@{mainMenu}}
+\index{mainMenu@{mainMenu}!UserIf@{UserIf}}
+\subsubsection[{mainMenu}]{\setlength{\rightskip}{0pt plus 5cm}int UserIf::mainMenu ()}}
+\label{classUserIf_a2e8d3d8d85a683762f1caa0cac4f9f0c}
+mainMenu: displays the main menu \hypertarget{classUserIf_a7792572195cdb2ced9d74177e45bdc6e}{
+\index{UserIf@{UserIf}!message@{message}}
+\index{message@{message}!UserIf@{UserIf}}
+\subsubsection[{message}]{\setlength{\rightskip}{0pt plus 5cm}int UserIf::message (char $\ast$ {\em msg}, \/  int {\em len})}}
+\label{classUserIf_a7792572195cdb2ced9d74177e45bdc6e}
+message: to display a message stored in buffer of given len \hypertarget{classUserIf_a9949473878f6f561d33d068ac5325ad2}{
+\index{UserIf@{UserIf}!showUser@{showUser}}
+\index{showUser@{showUser}!UserIf@{UserIf}}
+\subsubsection[{showUser}]{\setlength{\rightskip}{0pt plus 5cm}int UserIf::showUser ({\bf ClientInfo} $\ast$ {\em clientInfo}, \/  int {\em len})}}
+\label{classUserIf_a9949473878f6f561d33d068ac5325ad2}
+showUser: reads the client list and prints their id on UI screen
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em clientInfo}]pointer to client list \item[{\em len}]number of clients in the list \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+UserIf.h\item 
+UserIf.cpp\end{DoxyCompactItemize}

@@ -1,0 +1,217 @@
+\hypertarget{aes_8h}{
+\section{aes.h File Reference}
+\label{aes_8h}\index{aes.h@{aes.h}}
+}
+
+
+AES block cipher.  
+{\ttfamily \#include $<$string.h$>$}\par
+{\ttfamily \#include $<$inttypes.h$>$}\par
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structaes__context}{aes\_\-context}
+\begin{DoxyCompactList}\small\item\em AES context structure. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{aes_8h_a063cef6b73f545ffd6c73a94dd89b9a3}{
+\#define {\bfseries POLARSSL\_\-CIPHER\_\-MODE\_\-CTR}~1}
+\label{aes_8h_a063cef6b73f545ffd6c73a94dd89b9a3}
+
+\item 
+\hypertarget{aes_8h_a91e721bca5c6db6402fc3a4781d69b10}{
+\#define {\bfseries AES\_\-ENCRYPT}~1}
+\label{aes_8h_a91e721bca5c6db6402fc3a4781d69b10}
+
+\item 
+\hypertarget{aes_8h_a8a3cf36dc3c8860519f33907bad182c9}{
+\#define {\bfseries AES\_\-DECRYPT}~0}
+\label{aes_8h_a8a3cf36dc3c8860519f33907bad182c9}
+
+\item 
+\#define \hyperlink{aes_8h_ac9743adb9edbf81a73b5d522902163e4}{POLARSSL\_\-ERR\_\-AES\_\-INVALID\_\-KEY\_\-LENGTH}~-\/0x0020
+\item 
+\#define \hyperlink{aes_8h_a3a36fba5d9dcc0a3c8cf190933c7af14}{POLARSSL\_\-ERR\_\-AES\_\-INVALID\_\-INPUT\_\-LENGTH}~-\/0x0022
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{aes_8h_afd6a37a98051a30f74418beb908d0ecd}{aes\_\-init} (\hyperlink{structaes__context}{aes\_\-context} $\ast$ctx)
+\begin{DoxyCompactList}\small\item\em Initialize AES context. \item\end{DoxyCompactList}\item 
+void \hyperlink{aes_8h_a9ae37ee8cfabac5da5df9a573c34850f}{aes\_\-free} (\hyperlink{structaes__context}{aes\_\-context} $\ast$ctx)
+\begin{DoxyCompactList}\small\item\em Clear AES context. \item\end{DoxyCompactList}\item 
+int \hyperlink{aes_8h_a10f4e5fcaa4c08daf9c7a165a59c7969}{aes\_\-setkey\_\-enc} (\hyperlink{structaes__context}{aes\_\-context} $\ast$ctx, const unsigned char $\ast$key, unsigned int keysize)
+\begin{DoxyCompactList}\small\item\em AES key schedule (encryption). \item\end{DoxyCompactList}\item 
+int \hyperlink{aes_8h_ae57c42e15b27171ebe6ba075c8f7566d}{aes\_\-setkey\_\-dec} (\hyperlink{structaes__context}{aes\_\-context} $\ast$ctx, const unsigned char $\ast$key, unsigned int keysize)
+\begin{DoxyCompactList}\small\item\em AES key schedule (decryption). \item\end{DoxyCompactList}\item 
+int \hyperlink{aes_8h_a0c80313f1e98a573f0876366c35f0445}{aes\_\-crypt\_\-ecb} (\hyperlink{structaes__context}{aes\_\-context} $\ast$ctx, int mode, const unsigned char input\mbox{[}16\mbox{]}, unsigned char output\mbox{[}16\mbox{]})
+\begin{DoxyCompactList}\small\item\em AES-\/ECB block encryption/decryption. \item\end{DoxyCompactList}\item 
+int \hyperlink{aes_8h_a2eecec5f7c59c04c29dcbf476d8520a3}{aes\_\-crypt\_\-cbc} (\hyperlink{structaes__context}{aes\_\-context} $\ast$ctx, int mode, size\_\-t length, unsigned char iv\mbox{[}16\mbox{]}, const unsigned char $\ast$input, unsigned char $\ast$output)
+\begin{DoxyCompactList}\small\item\em AES-\/CBC buffer encryption/decryption Length should be a multiple of the block size (16 bytes). \item\end{DoxyCompactList}\item 
+int \hyperlink{aes_8h_a46a76a5b0d2d5597a4144fb5949ddb67}{aes\_\-crypt\_\-cfb128} (\hyperlink{structaes__context}{aes\_\-context} $\ast$ctx, int mode, size\_\-t length, size\_\-t $\ast$iv\_\-off, unsigned char iv\mbox{[}16\mbox{]}, const unsigned char $\ast$input, unsigned char $\ast$output)
+\begin{DoxyCompactList}\small\item\em AES-\/CFB128 buffer encryption/decryption. \item\end{DoxyCompactList}\item 
+int \hyperlink{aes_8h_a9cef882e9c468c9238475c865f1f5843}{aes\_\-crypt\_\-cfb8} (\hyperlink{structaes__context}{aes\_\-context} $\ast$ctx, int mode, size\_\-t length, unsigned char iv\mbox{[}16\mbox{]}, const unsigned char $\ast$input, unsigned char $\ast$output)
+\begin{DoxyCompactList}\small\item\em AES-\/CFB8 buffer encryption/decryption. \item\end{DoxyCompactList}\item 
+int \hyperlink{aes_8h_a06439f86425ff375c77c7daef4d624f9}{aes\_\-crypt\_\-ctr} (\hyperlink{structaes__context}{aes\_\-context} $\ast$ctx, size\_\-t length, size\_\-t $\ast$nc\_\-off, unsigned char nonce\_\-counter\mbox{[}16\mbox{]}, unsigned char stream\_\-block\mbox{[}16\mbox{]}, const unsigned char $\ast$input, unsigned char $\ast$output)
+\begin{DoxyCompactList}\small\item\em AES-\/CTR buffer encryption/decryption. \item\end{DoxyCompactList}\item 
+int \hyperlink{aes_8h_a3a4d8a79727330aa9bf8be633f9f1516}{aes\_\-self\_\-test} (int verbose)
+\begin{DoxyCompactList}\small\item\em Checkup routine. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+AES block cipher. Copyright (C) 2006-\/2014, Brainspark B.V.
+
+This file is part of PolarSSL (\href{http://www.polarssl.org}{\tt http://www.polarssl.org}) Lead Maintainer: Paul Bakker $<$polarssl\_\-maintainer at polarssl.org$>$
+
+All rights reserved.
+
+This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-\/1301 USA. 
+
+\subsection{Define Documentation}
+\hypertarget{aes_8h_a3a36fba5d9dcc0a3c8cf190933c7af14}{
+\index{aes.h@{aes.h}!POLARSSL\_\-ERR\_\-AES\_\-INVALID\_\-INPUT\_\-LENGTH@{POLARSSL\_\-ERR\_\-AES\_\-INVALID\_\-INPUT\_\-LENGTH}}
+\index{POLARSSL\_\-ERR\_\-AES\_\-INVALID\_\-INPUT\_\-LENGTH@{POLARSSL\_\-ERR\_\-AES\_\-INVALID\_\-INPUT\_\-LENGTH}!aes.h@{aes.h}}
+\subsubsection[{POLARSSL\_\-ERR\_\-AES\_\-INVALID\_\-INPUT\_\-LENGTH}]{\setlength{\rightskip}{0pt plus 5cm}\#define POLARSSL\_\-ERR\_\-AES\_\-INVALID\_\-INPUT\_\-LENGTH~-\/0x0022}}
+\label{aes_8h_a3a36fba5d9dcc0a3c8cf190933c7af14}
+Invalid data input length. \hypertarget{aes_8h_ac9743adb9edbf81a73b5d522902163e4}{
+\index{aes.h@{aes.h}!POLARSSL\_\-ERR\_\-AES\_\-INVALID\_\-KEY\_\-LENGTH@{POLARSSL\_\-ERR\_\-AES\_\-INVALID\_\-KEY\_\-LENGTH}}
+\index{POLARSSL\_\-ERR\_\-AES\_\-INVALID\_\-KEY\_\-LENGTH@{POLARSSL\_\-ERR\_\-AES\_\-INVALID\_\-KEY\_\-LENGTH}!aes.h@{aes.h}}
+\subsubsection[{POLARSSL\_\-ERR\_\-AES\_\-INVALID\_\-KEY\_\-LENGTH}]{\setlength{\rightskip}{0pt plus 5cm}\#define POLARSSL\_\-ERR\_\-AES\_\-INVALID\_\-KEY\_\-LENGTH~-\/0x0020}}
+\label{aes_8h_ac9743adb9edbf81a73b5d522902163e4}
+Invalid key length. 
+
+\subsection{Function Documentation}
+\hypertarget{aes_8h_a2eecec5f7c59c04c29dcbf476d8520a3}{
+\index{aes.h@{aes.h}!aes\_\-crypt\_\-cbc@{aes\_\-crypt\_\-cbc}}
+\index{aes\_\-crypt\_\-cbc@{aes\_\-crypt\_\-cbc}!aes.h@{aes.h}}
+\subsubsection[{aes\_\-crypt\_\-cbc}]{\setlength{\rightskip}{0pt plus 5cm}int aes\_\-crypt\_\-cbc ({\bf aes\_\-context} $\ast$ {\em ctx}, \/  int {\em mode}, \/  size\_\-t {\em length}, \/  unsigned char {\em iv}\mbox{[}16\mbox{]}, \/  const unsigned char $\ast$ {\em input}, \/  unsigned char $\ast$ {\em output})}}
+\label{aes_8h_a2eecec5f7c59c04c29dcbf476d8520a3}
+
+
+AES-\/CBC buffer encryption/decryption Length should be a multiple of the block size (16 bytes). 
+\begin{DoxyParams}{Parameters}
+\item[{\em ctx}]AES context \item[{\em mode}]AES\_\-ENCRYPT or AES\_\-DECRYPT \item[{\em length}]length of the input data \item[{\em iv}]initialization vector (updated after use) \item[{\em input}]buffer holding the input data \item[{\em output}]buffer holding the output data\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if successful, or POLARSSL\_\-ERR\_\-AES\_\-INVALID\_\-INPUT\_\-LENGTH 
+\end{DoxyReturn}
+\hypertarget{aes_8h_a46a76a5b0d2d5597a4144fb5949ddb67}{
+\index{aes.h@{aes.h}!aes\_\-crypt\_\-cfb128@{aes\_\-crypt\_\-cfb128}}
+\index{aes\_\-crypt\_\-cfb128@{aes\_\-crypt\_\-cfb128}!aes.h@{aes.h}}
+\subsubsection[{aes\_\-crypt\_\-cfb128}]{\setlength{\rightskip}{0pt plus 5cm}int aes\_\-crypt\_\-cfb128 ({\bf aes\_\-context} $\ast$ {\em ctx}, \/  int {\em mode}, \/  size\_\-t {\em length}, \/  size\_\-t $\ast$ {\em iv\_\-off}, \/  unsigned char {\em iv}\mbox{[}16\mbox{]}, \/  const unsigned char $\ast$ {\em input}, \/  unsigned char $\ast$ {\em output})}}
+\label{aes_8h_a46a76a5b0d2d5597a4144fb5949ddb67}
+
+
+AES-\/CFB128 buffer encryption/decryption. Note: Due to the nature of CFB you should use the same key schedule for both encryption and decryption. So a context initialized with \hyperlink{aes_8h_a10f4e5fcaa4c08daf9c7a165a59c7969}{aes\_\-setkey\_\-enc()} for both AES\_\-ENCRYPT and AES\_\-DECRYPT.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em ctx}]AES context \item[{\em mode}]AES\_\-ENCRYPT or AES\_\-DECRYPT \item[{\em length}]length of the input data \item[{\em iv\_\-off}]offset in IV (updated after use) \item[{\em iv}]initialization vector (updated after use) \item[{\em input}]buffer holding the input data \item[{\em output}]buffer holding the output data\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if successful 
+\end{DoxyReturn}
+\hypertarget{aes_8h_a9cef882e9c468c9238475c865f1f5843}{
+\index{aes.h@{aes.h}!aes\_\-crypt\_\-cfb8@{aes\_\-crypt\_\-cfb8}}
+\index{aes\_\-crypt\_\-cfb8@{aes\_\-crypt\_\-cfb8}!aes.h@{aes.h}}
+\subsubsection[{aes\_\-crypt\_\-cfb8}]{\setlength{\rightskip}{0pt plus 5cm}int aes\_\-crypt\_\-cfb8 ({\bf aes\_\-context} $\ast$ {\em ctx}, \/  int {\em mode}, \/  size\_\-t {\em length}, \/  unsigned char {\em iv}\mbox{[}16\mbox{]}, \/  const unsigned char $\ast$ {\em input}, \/  unsigned char $\ast$ {\em output})}}
+\label{aes_8h_a9cef882e9c468c9238475c865f1f5843}
+
+
+AES-\/CFB8 buffer encryption/decryption. Note: Due to the nature of CFB you should use the same key schedule for both encryption and decryption. So a context initialized with \hyperlink{aes_8h_a10f4e5fcaa4c08daf9c7a165a59c7969}{aes\_\-setkey\_\-enc()} for both AES\_\-ENCRYPT and AES\_\-DECRYPT.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em ctx}]AES context \item[{\em mode}]AES\_\-ENCRYPT or AES\_\-DECRYPT \item[{\em length}]length of the input data \item[{\em iv}]initialization vector (updated after use) \item[{\em input}]buffer holding the input data \item[{\em output}]buffer holding the output data\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if successful 
+\end{DoxyReturn}
+\hypertarget{aes_8h_a06439f86425ff375c77c7daef4d624f9}{
+\index{aes.h@{aes.h}!aes\_\-crypt\_\-ctr@{aes\_\-crypt\_\-ctr}}
+\index{aes\_\-crypt\_\-ctr@{aes\_\-crypt\_\-ctr}!aes.h@{aes.h}}
+\subsubsection[{aes\_\-crypt\_\-ctr}]{\setlength{\rightskip}{0pt plus 5cm}int aes\_\-crypt\_\-ctr ({\bf aes\_\-context} $\ast$ {\em ctx}, \/  size\_\-t {\em length}, \/  size\_\-t $\ast$ {\em nc\_\-off}, \/  unsigned char {\em nonce\_\-counter}\mbox{[}16\mbox{]}, \/  unsigned char {\em stream\_\-block}\mbox{[}16\mbox{]}, \/  const unsigned char $\ast$ {\em input}, \/  unsigned char $\ast$ {\em output})}}
+\label{aes_8h_a06439f86425ff375c77c7daef4d624f9}
+
+
+AES-\/CTR buffer encryption/decryption. Warning: You have to keep the maximum use of your counter in mind!
+
+Note: Due to the nature of CTR you should use the same key schedule for both encryption and decryption. So a context initialized with \hyperlink{aes_8h_a10f4e5fcaa4c08daf9c7a165a59c7969}{aes\_\-setkey\_\-enc()} for both AES\_\-ENCRYPT and AES\_\-DECRYPT.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em ctx}]AES context \item[{\em length}]The length of the data \item[{\em nc\_\-off}]The offset in the current stream\_\-block (for resuming within current cipher stream). The offset pointer to should be 0 at the start of a stream. \item[{\em nonce\_\-counter}]The 128-\/bit nonce and counter. \item[{\em stream\_\-block}]The saved stream-\/block for resuming. Is overwritten by the function. \item[{\em input}]The input data stream \item[{\em output}]The output data stream\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if successful 
+\end{DoxyReturn}
+\hypertarget{aes_8h_a0c80313f1e98a573f0876366c35f0445}{
+\index{aes.h@{aes.h}!aes\_\-crypt\_\-ecb@{aes\_\-crypt\_\-ecb}}
+\index{aes\_\-crypt\_\-ecb@{aes\_\-crypt\_\-ecb}!aes.h@{aes.h}}
+\subsubsection[{aes\_\-crypt\_\-ecb}]{\setlength{\rightskip}{0pt plus 5cm}int aes\_\-crypt\_\-ecb ({\bf aes\_\-context} $\ast$ {\em ctx}, \/  int {\em mode}, \/  const unsigned char {\em input}\mbox{[}16\mbox{]}, \/  unsigned char {\em output}\mbox{[}16\mbox{]})}}
+\label{aes_8h_a0c80313f1e98a573f0876366c35f0445}
+
+
+AES-\/ECB block encryption/decryption. 
+\begin{DoxyParams}{Parameters}
+\item[{\em ctx}]AES context \item[{\em mode}]AES\_\-ENCRYPT or AES\_\-DECRYPT \item[{\em input}]16-\/byte input block \item[{\em output}]16-\/byte output block\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if successful 
+\end{DoxyReturn}
+\hypertarget{aes_8h_a9ae37ee8cfabac5da5df9a573c34850f}{
+\index{aes.h@{aes.h}!aes\_\-free@{aes\_\-free}}
+\index{aes\_\-free@{aes\_\-free}!aes.h@{aes.h}}
+\subsubsection[{aes\_\-free}]{\setlength{\rightskip}{0pt plus 5cm}void aes\_\-free ({\bf aes\_\-context} $\ast$ {\em ctx})}}
+\label{aes_8h_a9ae37ee8cfabac5da5df9a573c34850f}
+
+
+Clear AES context. 
+\begin{DoxyParams}{Parameters}
+\item[{\em ctx}]AES context to be cleared \end{DoxyParams}
+\hypertarget{aes_8h_afd6a37a98051a30f74418beb908d0ecd}{
+\index{aes.h@{aes.h}!aes\_\-init@{aes\_\-init}}
+\index{aes\_\-init@{aes\_\-init}!aes.h@{aes.h}}
+\subsubsection[{aes\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}void aes\_\-init ({\bf aes\_\-context} $\ast$ {\em ctx})}}
+\label{aes_8h_afd6a37a98051a30f74418beb908d0ecd}
+
+
+Initialize AES context. 
+\begin{DoxyParams}{Parameters}
+\item[{\em ctx}]AES context to be initialized \end{DoxyParams}
+\hypertarget{aes_8h_a3a4d8a79727330aa9bf8be633f9f1516}{
+\index{aes.h@{aes.h}!aes\_\-self\_\-test@{aes\_\-self\_\-test}}
+\index{aes\_\-self\_\-test@{aes\_\-self\_\-test}!aes.h@{aes.h}}
+\subsubsection[{aes\_\-self\_\-test}]{\setlength{\rightskip}{0pt plus 5cm}int aes\_\-self\_\-test (int {\em verbose})}}
+\label{aes_8h_a3a4d8a79727330aa9bf8be633f9f1516}
+
+
+Checkup routine. \begin{DoxyReturn}{Returns}
+0 if successful, or 1 if the test failed 
+\end{DoxyReturn}
+\hypertarget{aes_8h_ae57c42e15b27171ebe6ba075c8f7566d}{
+\index{aes.h@{aes.h}!aes\_\-setkey\_\-dec@{aes\_\-setkey\_\-dec}}
+\index{aes\_\-setkey\_\-dec@{aes\_\-setkey\_\-dec}!aes.h@{aes.h}}
+\subsubsection[{aes\_\-setkey\_\-dec}]{\setlength{\rightskip}{0pt plus 5cm}int aes\_\-setkey\_\-dec ({\bf aes\_\-context} $\ast$ {\em ctx}, \/  const unsigned char $\ast$ {\em key}, \/  unsigned int {\em keysize})}}
+\label{aes_8h_ae57c42e15b27171ebe6ba075c8f7566d}
+
+
+AES key schedule (decryption). 
+\begin{DoxyParams}{Parameters}
+\item[{\em ctx}]AES context to be initialized \item[{\em key}]decryption key \item[{\em keysize}]must be 128, 192 or 256\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if successful, or POLARSSL\_\-ERR\_\-AES\_\-INVALID\_\-KEY\_\-LENGTH 
+\end{DoxyReturn}
+\hypertarget{aes_8h_a10f4e5fcaa4c08daf9c7a165a59c7969}{
+\index{aes.h@{aes.h}!aes\_\-setkey\_\-enc@{aes\_\-setkey\_\-enc}}
+\index{aes\_\-setkey\_\-enc@{aes\_\-setkey\_\-enc}!aes.h@{aes.h}}
+\subsubsection[{aes\_\-setkey\_\-enc}]{\setlength{\rightskip}{0pt plus 5cm}int aes\_\-setkey\_\-enc ({\bf aes\_\-context} $\ast$ {\em ctx}, \/  const unsigned char $\ast$ {\em key}, \/  unsigned int {\em keysize})}}
+\label{aes_8h_a10f4e5fcaa4c08daf9c7a165a59c7969}
+
+
+AES key schedule (encryption). 
+\begin{DoxyParams}{Parameters}
+\item[{\em ctx}]AES context to be initialized \item[{\em key}]encryption key \item[{\em keysize}]must be 128, 192 or 256\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if successful, or POLARSSL\_\-ERR\_\-AES\_\-INVALID\_\-KEY\_\-LENGTH 
+\end{DoxyReturn}
